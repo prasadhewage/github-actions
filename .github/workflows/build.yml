@@ -9,7 +9,8 @@ jobs:
     container: node:20.15.1
     steps: 
       - run: node --version
-        name: Checkout source code to run the node app
+        name: Check container node version
       - uses: actions/checkout@v4
-        name: build and run the node app
+        name: Checkout source code to run the node app
       - run: npm run build
+        name: build and run the node app
