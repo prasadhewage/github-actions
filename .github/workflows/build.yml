@@ -9,4 +9,5 @@ jobs:
     container: node:20.15.1
     steps: 
       - run: node --version
+      - uses: actions/checkout@v4
       - run: npm run build
