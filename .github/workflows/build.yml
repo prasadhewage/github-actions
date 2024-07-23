@@ -3,9 +3,10 @@ name: Build
 on: push
 
 jobs:
-  build-job:
+  build-node:
     name: build
     runs-on: ubuntu-latest
     container: node:20.15.1
     steps: 
       - run: node --version
+      - run: npm run build

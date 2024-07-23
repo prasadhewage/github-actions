@@ -1,0 +1,7 @@
+{
+    "name": "Github Workflows",
+    "main": "app.js",
+    "scripts": {
+        "build": "node app.js"
+    }
+}
