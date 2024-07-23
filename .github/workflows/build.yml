@@ -4,11 +4,10 @@ on: push
 
 jobs:
   build-node:
-    name: Build and run node app
+    name: Build and run node project
     runs-on: ubuntu-latest
     container: node:20.15.1
     steps: 
-        name: Check container node version
       - run: node --version
         name: Checkout source code to run the node app
       - uses: actions/checkout@v4
